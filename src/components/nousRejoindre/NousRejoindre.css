@@ -1,22 +1,28 @@
-input{
-    display: block;
-    width: 20%;
-    margin: auto;
-    margin-bottom: 1%;
-}
-
-.lastname{
-    margin-top: 8%;
-}
-
-.btnValid{
-    margin : auto;
-    display: block;
-    width: 6%;
-    margin-bottom: 10%;
-}
-
 .presNousRej{
     margin-top: 5%;
     text-align: center;
+    font-size: 1.1em;
+}
+
+.formulaire{
+    width: 40%;
+    margin: auto;
+}
+
+input{
+    font-size: 0.8em !important;
+}
+
+label{
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+}
+
+.btnValid{
+    width: 15%;
+    display: block !important;
+    margin: auto !important;
+    font-size: 0.8em !important;
+    font-weight: bold;
+    margin-bottom: 10% !important;
 }

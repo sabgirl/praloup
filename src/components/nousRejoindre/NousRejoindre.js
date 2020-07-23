@@ -73,7 +73,8 @@ const NousRejoindre = () => {
         <p>Nous vous proposons d'effectuer une pré-inscription en ligne.</p>
         <p>Afin de finaliser votre inscription, nous vous demandons de vous adresser un chèque d'un montant de 20 euros.</p>
       </div>
-      <form onSubmit={addInscription}>
+      {/* <form onSubmit={addInscription}>
+        <label>Nom</label>
         <input className="lastname" required type='text' value={inscription.lastname} onChange={(e) => setInscription({ ...inscription, lastname: e.target.value })} placeholder='Nom' />
         <input name="firstname" required type='text' value={inscription.firstname} onChange={(e) => setInscription({ ...inscription, firstname: e.target.value })} placeholder='Prénom' />
         <input name="addressPraloup" required type='text' value={inscription.addressPraloup} onChange={(e) => setInscription({ ...inscription, addressPraloup: e.target.value })} placeholder='Adresse à Pra Loup' />
@@ -81,7 +82,34 @@ const NousRejoindre = () => {
         <input name="tel" required type='text' value={inscription.tel} onChange={(e) => setInscription({ ...inscription, tel: e.target.value })} placeholder='Téléphone' />
         <input name="email" required type='text' value={inscription.email} onChange={(e) => setInscription({ ...inscription, email: e.target.value })} placeholder='Email' />
         <button className="btnValid" type="submit">Valider</button>
-      </form>
+      </form> */}
+      <Form onSubmit={addInscription} className="formulaire">
+        <Form.Field className="champs">
+          <label>Nom</label>
+          <input className="lastname" required type='text' value={inscription.lastname} onChange={(e) => setInscription({ ...inscription, lastname: e.target.value })} placeholder='Nom' />
+        </Form.Field>
+        <Form.Field>
+          <label>Prénom</label>
+          <input name="firstname" required type='text' value={inscription.firstname} onChange={(e) => setInscription({ ...inscription, firstname: e.target.value })} placeholder='Prénom' />
+        </Form.Field>
+        <Form.Field>
+          <label>Addresse à Pra Loup</label>
+          <input name="addressPraloup" required type='text' value={inscription.addressPraloup} onChange={(e) => setInscription({ ...inscription, addressPraloup: e.target.value })} placeholder='Addresse à Pra Loup' />
+        </Form.Field>
+        <Form.Field>
+          <label>Addresse principale</label>
+          <input name="address" type='text' value={inscription.address} onChange={(e) => setInscription({ ...inscription, address: e.target.value })} placeholder='Addresse principale' />
+        </Form.Field>
+        <Form.Field>
+          <label>Téléphone</label>
+          <input name="tel" required type='text' value={inscription.tel} onChange={(e) => setInscription({ ...inscription, tel: e.target.value })} placeholder='Téléphone' />
+        </Form.Field>
+        <Form.Field>
+          <label>Email</label>
+          <input name="email" required type='text' value={inscription.email} onChange={(e) => setInscription({ ...inscription, email: e.target.value })} placeholder='Email' />
+        </Form.Field>
+        <Button className="btnValid" type='submit'>Submit</Button>
+      </Form>
     </div>
   )
 }
