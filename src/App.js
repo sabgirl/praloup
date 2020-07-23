@@ -9,10 +9,10 @@ import Router from './components/Router'
 function App() {
   return (
     <div>
-      {/* <Router /> */}
-      <Navbar/>
+      <Router />
+      {/* <Navbar/>
       <Home />
-      <Footer/>
+      <Footer/> */}
      </div> 
   );
 }

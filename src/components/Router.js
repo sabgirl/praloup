@@ -5,7 +5,7 @@ import LiensUtiles from './liensUtiles/LiensUtiles'
 import Navbar from './navbar/Navbar'
 import NousConnaitre from './nousConnaitre/NousConnaitre'
 import NousRejoindre from './nousRejoindre/NousRejoindre'
-import {BrowserRouter as Switch, Route} from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 
 function Router() {
     return (
