@@ -49,7 +49,7 @@ class Navbar extends Component {
                   <Icon name='sidebar' />
                 </Menu.Item>
 
-                <Menu.Item position='center' className="navbarTitle">
+                <Menu.Item position='left' className="navbarTitle">
                 <Link to ='/' className='navLink' ><Icon name ='tree' className='navIcon'></Icon>ASSOCIATION DEFENSE PRA LOUP MOLANES<Icon name ='tree' className='navIcon'></Icon></Link>
                 </Menu.Item>
 
