@@ -8,7 +8,9 @@
     padding-top: 3%;
 }
 
-
+.titleCard{
+    font-size: 1em !important;
+}
 
 .télésiège{
     background-size: cover;
@@ -24,12 +26,12 @@
 
 .poubelle{
     background-size: cover;
-    width: 220px;
+    width: 160px;
     height: 180px;
 }
 .plus{
     background-color: rgba(207, 152, 31, 0.884) !important;
-    font-size: 0.9em !important;
+    font-size: 0.7em !important;
     color: black !important;
 }
 
@@ -43,16 +45,21 @@
 }
 
 .descriptionCard{
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
 .grid{
-    margin-top: 10% !important;
+    margin-top: 5% !important;
     margin-bottom: 10% !important;
-    padding-left: 5% !important;
+    padding-left: 20% !important;
 }
 
 .card{
     height: 100% !important;
     width: 80% !important;
+}
+
+.longlarg{
+    height: 30% !important;
+    width: 25% !important;
 }

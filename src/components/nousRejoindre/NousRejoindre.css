@@ -1,0 +1,22 @@
+input{
+    display: block;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.lastname{
+    margin-top: 8%;
+}
+
+.btnValid{
+    margin : auto;
+    display: block;
+    width: 6%;
+    margin-bottom: 10%;
+}
+
+.presNousRej{
+    margin-top: 5%;
+    text-align: center;
+}

@@ -13,7 +13,7 @@ const Projets = () => (
         </Container>
         
              <Grid container columns={3} className='grid'>
-        <Grid.Column>
+        <Grid.Column className="longlarg">
             <Card className='card'>
                 <Image src='https://www.ccvusp.fr/csx/scripts/resizer.php?filename=SECTION/img1/33/56/a5t5l1ncltlp&mime=image%2Fjpeg&&originalname=Colonnes%20de%20tri.jpg&geometry=750x%3E' className="poubelle" wrapped ui={false} />
                 <Card.Content>
@@ -32,12 +32,12 @@ const Projets = () => (
                 </Card.Content>
             </Card>
         </Grid.Column>
-        <Grid.Column>
+        <Grid.Column className="longlarg">
 
             <Card>
                 <Image src='https://static.flickr.com/2079/2134558014_6c85e8a17e.jpg' className="télésiège" />
                 <Card.Content>
-                    <Card.Header className="titleCard">Utilisation du télésiège</Card.Header>
+                    <Card.Header className="titleCard">Télésiège</Card.Header>
                     <Card.Meta>
                         <span className='thématique'>Ecologie</span>
                     </Card.Meta>
@@ -53,7 +53,7 @@ const Projets = () => (
             </Card>
 
         </Grid.Column>
-        <Grid.Column>
+        <Grid.Column className="longlarg">
             <Card>
                 <Image src='https://static.flickr.com/7442/16236937337_8c0bac189f.jpg' className="ski" />
                 <Card.Content>
@@ -62,7 +62,7 @@ const Projets = () => (
                         <span className='thématique'>Loisirs</span>
                     </Card.Meta>
                     <Card.Description className="descriptionCard">
-                        Vers un retour de l'école de ski à Pra Loup 1500
+                        Vers un retour de l'école de ski à Pra Loup 1500 que nous connaissions
       </Card.Description>
                 </Card.Content>
                 <Card.Content extra className="plus">
