@@ -2,6 +2,13 @@
     background-color: #381c01 !important;
 }
 
+.navLink{
+    color: lemonchiffon !important;
+}
+
+.liens{
+    color: lemonchiffon !important;
+}
 .navbarTitle{
     width: 100% !important;
     font-size: 1.7em;
@@ -23,12 +30,16 @@
     
 }
 
-.login{
+.navIcon{
+    color: lemonchiffon;
+}
+
+/* .login{
     padding-right: 4% !important;
     color: #EDF6F9 !important;
     font-family: 'playfair display', 'sans serif' !important;
     font-weight: bold;
-}
+} */
 
 /* *{
     color: #EDF6F9;

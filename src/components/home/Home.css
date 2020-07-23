@@ -34,3 +34,12 @@
     height: 100% !important;
     width: 80% !important;
 }
+
+.philosophie{
+    font-size: 1.8em;
+    margin-top: 8% !important;
+    background-color: rgba(231, 224, 159, 0.3);
+    color: black;
+    width: 50%;
+    padding-left: 1%;
+}

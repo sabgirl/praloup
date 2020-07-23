@@ -4,12 +4,12 @@ import './Home.css'
 
 const Home = () => (
     <>
-    <Container>
+    <Container >
        
-            Bienvenue
+         <p className="philosophie">Ensemble, préservons notre patrimoine</p> 
            
     </Container>
-    <Grid container columns={3} className='grid'>
+    {/* <Grid container columns={3} textAlign='center className='grid'>
         <Grid.Column>
             <Card className='card'>
                 <Image src='https://www.ccvusp.fr/csx/scripts/resizer.php?filename=SECTION/img1/33/56/a5t5l1ncltlp&mime=image%2Fjpeg&&originalname=Colonnes%20de%20tri.jpg&geometry=750x%3E' wrapped ui={false} />
@@ -70,7 +70,7 @@ const Home = () => (
             </Card>
         </Grid.Column>
 
-    </Grid>
+    </Grid> */}
 
 </>
 
