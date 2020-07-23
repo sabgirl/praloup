@@ -1,0 +1,35 @@
+.footerColor {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9%;
+    background-color: #006D77 !important;
+    margin: 0;
+  }
+
+  .flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoPraloup{
+    width: 30px;
+    height: 30px;
+    
+  }
+
+  .logoFacebook{
+    width: 30px;
+    height: 30px;
+  }
+
+  .logos{
+      padding-top: 0.5%;
+  }
+
+  p{
+      font-size: 0.7em;
+      font-weight: bold;
+  }
