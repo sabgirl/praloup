@@ -38,7 +38,7 @@ class Navbar extends Component {
         >
             <Menu.Item as='a'><Link to ='/projets'onClick={this.handleSidebarHide} className="liens">Nos projets</Link></Menu.Item>
             <Menu.Item as='a'><Link to ='/nousconnaitre'onClick={this.handleSidebarHide} className="liens">Qui sommes-nous?</Link></Menu.Item>
-            <Menu.Item as='a'><Link to ='/liensutiles'onClick={this.handleSidebarHide} className="liens">Liens utiles</Link></Menu.Item>
+            {/* <Menu.Item as='a'><Link to ='/liensutiles'onClick={this.handleSidebarHide} className="liens">Liens utiles</Link></Menu.Item> */}
             <Menu.Item as='a'><Link to ='/nousrejoindre'onClick={this.handleSidebarHide} className="liens"> Nous rejoindre</Link></Menu.Item>
           </Sidebar>
   

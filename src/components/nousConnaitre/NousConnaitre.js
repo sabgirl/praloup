@@ -3,12 +3,12 @@ import { Card, Image, Grid, Container, Icon } from 'semantic-ui-react';
 import './NousConnaitre.css'
 
 const NousConnaitre = () => ( 
-    <>    
+    <div className="backgroundnousConnaitre">    
     <Container className="descriptionHaut">
-            <p>Si nous avons créer cette association, c'est dans le but de pouvoir défendre des droits acquis, savoir entre autre, le maintien de la gare intermédiaire des Molanes dans le futur projet de renouvellement du télésiège.</p>
-            <p>A l'origine, plusieurs projets étaient en cours, et tous sauf un, préconisaient la suppression de la gare intermédiaire, c'est pourquoi, comme dit le vieil adage, " mieux vaut prévenir que guérir", DEFENSE DES MOLANES est née.</p>
-            <p>C'est dans cet esprit, que nous avons  créer cetthttps://www.praloup-vacances.com/wp-content/uploads/2020/01/seolane-pra-loup.jpge association.</p>
-            <p>Pour nous défendre et conserver les acquis de chacun.</p>
+            <p className="pconnaitre">Si nous avons créer cette association, c'est dans le but de pouvoir défendre des droits acquis, savoir entre autre, le maintien de la gare intermédiaire des Molanes dans le futur projet de renouvellement du télésiège.</p>
+            <p className="pconnaitre">A l'origine, plusieurs projets étaient en cours, et tous sauf un, préconisaient la suppression de la gare intermédiaire, c'est pourquoi, comme dit le vieil adage, " mieux vaut prévenir que guérir", DEFENSE DES MOLANES est née.</p>
+            <p className="pconnaitre">C'est dans cet esprit, que nous avons  créer cette association.</p>
+            <p className="pconnaitre">Pour nous défendre et conserver les acquis de chacun.</p>
         </Container>
         <Grid verticalAlign='middle' columns={4} centered>
     <Grid.Row>
@@ -27,13 +27,18 @@ const NousConnaitre = () => (
   </Grid>
         <Container className="descriptionBas">
             <h2>Nos actions</h2>
-            <p>Nos actions sont multiples. Nous nous engageons pour le maintien de l'authenticité de notre belle station. </p>
-            <p>Nous souhaitons préserver le respect de la nature, conserver nos infrastructures et les exploiter davantage.</p>
-            <p>Nous voulons développer les loisirs et activités tout au long de l'année.</p>
-            <p>Pour nous, l'écologie fait partie intégrante de nos valeurs.</p>
-
+            <div className="actions">
+            <Icon name='tree' className="puce"></Icon><p className="pconnaitre"> Nous nous engageons pour le maintien de l'authenticité de notre belle station </p>
+            </div>
+            <div className="actions">
+            <Icon name='tree' className="puce"></Icon><p className="pconnaitre">Nous souhaitons préserver le respect de la nature, conserver nos infrastructures et les exploiter davantage</p>
+           </div>
+           <div className="actions"> <Icon name='tree' className="puce"></Icon><p className="pconnaitre">Nous voulons développer les loisirs et activités tout au long de l'année</p>
+            </div>
+            <div className="actions"><Icon name='tree' className="puce"></Icon><p className="pconnaitre">Pour nous, l'écologie fait partie intégrante de nos valeurs</p>
+            </div>
         </Container>
-        </>
+        </div>
     )
 
 

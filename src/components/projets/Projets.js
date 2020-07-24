@@ -1,82 +1,61 @@
 import React from 'react';
-import { Card, Image, Grid, Container, Icon } from 'semantic-ui-react';
+import { Card, Image, Grid, Container, Icon} from 'semantic-ui-react';
+import {Link} from 'react-router-dom'
 import './Projets.css';
 
 const Projets = () => (
-    <>
-    <Container className="presentationProjets">
-       
-        <p className="layoutPres">Nous travaillons sur des projets d'actualité selon diverses thématiques : loisir et culture, écologie, économie, sécurité,...</p>
-        <p className="layoutPres">Notre objectif : toujours veiller à défendre nos intérêts pour vivre au mieux ensemble.</p>
-        <p className="layoutPres">Si des projets vous intéressent ou si vous avez des projets qui vous tiennent à coeur, vous pouvez également rejoindre notre association.</p>
-    
+    <div className="backgroundProjets">
+        <Container className="presentationProjets">
+
+            <p className="layoutPres">Nous travaillons sur des projets d'actualité selon diverses thématiques : loisir et culture, écologie, économie, sécurité, ...</p>
+            <p className="layoutPres">Notre objectif : toujours veiller à défendre nos intérêts pour vivre au mieux ensemble.</p>
+            <p className="layoutPres">Si des projets vous intéressent ou si vous avez des projets qui vous tiennent à coeur, vous pouvez également rejoindre notre association.</p>
+
         </Container>
+
+
+        <Grid celled className="gridprojet">
+            <Grid.Row>
+                <Grid.Column width={6} className="gridphoto">
+                    <Image src='https://www.ccvusp.fr/csx/scripts/resizer.php?filename=SECTION/img1/33/56/a5t5l1ncltlp&mime=image%2Fjpeg&&originalname=Colonnes%20de%20tri.jpg&geometry=750x%3E' className="poubelle"/>
+                </Grid.Column>
+                <Grid.Column width={10}>
+                    <h4>Le tri-sélectif</h4>
+                    <p className="thematique">Ecologie</p>
+                    <p className="pprojet">Une nouvelle vie pour nos déchets et notre environnement !</p>
+                    <Link><p className="plus">En savoir plus</p></Link>
+                </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+                <Grid.Column width={6} className="gridphoto">
+                    <Image src='data:image/jpeg;base64,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' className="télésiège"/>
+                </Grid.Column>
+                <Grid.Column width={10}>
+                    <h4>L'utilisation du télésiège</h4>
+                    <p className="thematique">Ecologie</p>
+                    <p className="pprojet">Utiliser davantage les infrastructures mises en place quelle que soit la saison</p>
+                    <Link><p className="plus">En savoir plus</p></Link>
+                </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+                <Grid.Column width={6} className="gridphoto">
+                    <Image src='https://static.flickr.com/7442/16236937337_8c0bac189f.jpg' className="ski"/>
+                </Grid.Column>
+                <Grid.Column width={10}>
+                    <h4>Ecole de ski</h4>
+                    <p className="thematique">Loisirs</p>
+                    <p className="pprojet">Vers un retour de l'école de ski à Pra Loup 1500 que nous connaissions</p>
+                    <Link><p className="plus">En savoir plus</p></Link>
+                </Grid.Column>
+            </Grid.Row>
+
+        </Grid>
+
+
         
-             <Grid container columns={3} className='grid'>
-        <Grid.Column className="longlarg">
-            <Card className='card'>
-                <Image src='https://www.ccvusp.fr/csx/scripts/resizer.php?filename=SECTION/img1/33/56/a5t5l1ncltlp&mime=image%2Fjpeg&&originalname=Colonnes%20de%20tri.jpg&geometry=750x%3E' className="poubelle" wrapped ui={false} />
-                <Card.Content>
-                    <Card.Header className="titleCard">Le tri-sélectif</Card.Header>
-                    <Card.Meta>
-                        <span className='thématique'>Ecologie</span>
-                    </Card.Meta>
-                    <Card.Description className="descriptionCard">
-                        Une nouvelle vie pour nos déchets et notre environnement !
-      </Card.Description>
-                </Card.Content>
-                <Card.Content extra className="plus">
-                    <a>
-                        En savoir plus
-      </a>
-                </Card.Content>
-            </Card>
-        </Grid.Column>
-        <Grid.Column className="longlarg">
+    </div>
 
-            <Card>
-                <Image src='https://static.flickr.com/2079/2134558014_6c85e8a17e.jpg' className="télésiège" />
-                <Card.Content>
-                    <Card.Header className="titleCard">Télésiège</Card.Header>
-                    <Card.Meta>
-                        <span className='thématique'>Ecologie</span>
-                    </Card.Meta>
-                    <Card.Description className="descriptionCard">
-                        Utiliser davantage les infrastructures mises en place quelle que soit la saison
-      </Card.Description>
-                </Card.Content>
-                <Card.Content extra className="plus">
-                    <a>
-                        En savoir plus
-      </a>
-                </Card.Content>
-            </Card>
-
-        </Grid.Column>
-        <Grid.Column className="longlarg">
-            <Card>
-                <Image src='https://static.flickr.com/7442/16236937337_8c0bac189f.jpg' className="ski" />
-                <Card.Content>
-                    <Card.Header className="titleCard">Ecole de ski</Card.Header>
-                    <Card.Meta>
-                        <span className='thématique'>Loisirs</span>
-                    </Card.Meta>
-                    <Card.Description className="descriptionCard">
-                        Vers un retour de l'école de ski à Pra Loup 1500 que nous connaissions
-      </Card.Description>
-                </Card.Content>
-                <Card.Content extra className="plus">
-                    <a>
-                        En savoir plus
-      </a>
-                </Card.Content>
-            </Card>
-        </Grid.Column>
-
-    </Grid>
-</>
-       
-    )
+)
 
 
 export default Projets

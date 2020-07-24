@@ -2,6 +2,11 @@
     margin-top: 5%;
     text-align: center;
     font-size: 1.1em;
+    margin-bottom: 3%;
+}
+
+p{
+    color: black;
 }
 
 .formulaire{
@@ -11,6 +16,14 @@
 
 input{
     font-size: 0.8em !important;
+    background-color:hsl(19, 63%, 49%) !important;
+    height: 20px !important;
+}
+
+input::placeholder{
+    color: black !important;
+    font-size: 0.7em !important;
+    font-style: italic !important;
 }
 
 label{
@@ -19,10 +32,32 @@ label{
 }
 
 .btnValid{
-    width: 15%;
+    width: 25%;
     display: block !important;
     margin: auto !important;
     font-size: 0.8em !important;
     font-weight: bold;
     margin-bottom: 10% !important;
+    background-color: hsl(19, 84%, 58%) !important;
+    border: black !important;
+    color: black !important;
+}
+
+.backgroundNousRej{
+    /* background-color: rgba(255, 250, 205, 0.7) !important;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important; */
+    background-image: url('./../../assets/marmottesite.jpg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.borderRej{
+    border: 1px rgba(255, 250, 205, 0.5) solid;
+    border-radius: 45px;
+    background-color: rgba(255, 250, 205, 0.5);
+    width: 60%;
+    margin-left: 10%;
 }

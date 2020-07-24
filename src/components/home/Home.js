@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import './Home.css'
 
 const Home = () => (
-    <>
+    <div className = "backgroundhome">
         <Container >
             <p className="philosophie">Ensemble, préservons notre patrimoine</p>
         </Container>
@@ -14,7 +14,7 @@ const Home = () => (
             
         </Container>
        
-    </>
+    </div>
 
 )
 

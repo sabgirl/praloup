@@ -67,7 +67,8 @@ const NousRejoindre = () => {
   }
 
   return (
-    <div>
+    <div className="backgroundNousRej">
+      <div className="borderRej">
       <div className="presNousRej">
         <p>Vous souhaitez adhérer à notre association?</p>
         <p>Nous vous proposons d'effectuer une pré-inscription en ligne.</p>
@@ -93,12 +94,12 @@ const NousRejoindre = () => {
           <input name="firstname" required type='text' value={inscription.firstname} onChange={(e) => setInscription({ ...inscription, firstname: e.target.value })} placeholder='Prénom' />
         </Form.Field>
         <Form.Field>
-          <label>Addresse à Pra Loup</label>
-          <input name="addressPraloup" required type='text' value={inscription.addressPraloup} onChange={(e) => setInscription({ ...inscription, addressPraloup: e.target.value })} placeholder='Addresse à Pra Loup' />
+          <label>Adresse à Pra Loup</label>
+          <input name="addressPraloup" required type='text' value={inscription.addressPraloup} onChange={(e) => setInscription({ ...inscription, addressPraloup: e.target.value })} placeholder='Adresse à Pra Loup' />
         </Form.Field>
         <Form.Field>
-          <label>Addresse principale</label>
-          <input name="address" type='text' value={inscription.address} onChange={(e) => setInscription({ ...inscription, address: e.target.value })} placeholder='Addresse principale' />
+          <label>Adresse principale</label>
+          <input name="address" type='text' value={inscription.address} onChange={(e) => setInscription({ ...inscription, address: e.target.value })} placeholder='Adresse principale' />
         </Form.Field>
         <Form.Field>
           <label>Téléphone</label>
@@ -110,6 +111,7 @@ const NousRejoindre = () => {
         </Form.Field>
         <Button className="btnValid" type='submit'>Submit</Button>
       </Form>
+      </div>
     </div>
   )
 }

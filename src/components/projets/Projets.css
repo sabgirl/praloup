@@ -1,12 +1,30 @@
-.presentationProjets{
-    margin-top: 5%;
-    font-size: 1.4em;
-    width: 65%;
-    background-color: rgba(14, 13, 12, 0.5);
-    padding-left: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%;
+.backgroundProjets{
+    background-color: rgba(255, 250, 205, 0.5) !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+
+
+.presentationProjets{
+    margin-top: 4%;
+    font-size: 0.9em;
+    width: 65% !important;
+    /* background-color: rgba(14, 13, 12, 0.5); */
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color: rgba(29, 16, 4, 0.9);
+    margin-left: 3% !important;
+    margin-bottom: 3%;
+}
+
+.layoutPres{
+    color: lemonchiffon !important;
+    font-weight: normal;
+}
+
 
 .titleCard{
     font-size: 1em !important;
@@ -14,44 +32,31 @@
 
 .télésiège{
     background-size: cover;
-    width: 300px;
-    height: 180px;
+    width: 180px;
+    height: 120px;
 }
 
 .ski{
     background-size: cover;
-    width: 300px;
-    height: 180px;
+    width: 160px;
+    height: 120px;
 }
 
 .poubelle{
     background-size: cover;
-    width: 160px;
-    height: 180px;
+    width: 180px;
+    height: 120px;
 }
 .plus{
-    background-color: rgba(207, 152, 31, 0.884) !important;
-    font-size: 0.7em !important;
-    color: black !important;
-}
-
-.plus:hover{
-    color: black !important;
-}
-
-.thématique{
-    color: #f0692b !important;
-    font-size: 0.9em;
-}
-
-.descriptionCard{
+    font-style: italic;
     font-size: 0.7em;
+    color: black !important;
 }
 
-.grid{
-    margin-top: 5% !important;
-    margin-bottom: 10% !important;
-    padding-left: 20% !important;
+.gridprojet{
+ width: 50% !important;
+ margin: auto !important;
+ background-color:  #d1aa98;
 }
 
 .card{
@@ -62,4 +67,14 @@
 .longlarg{
     height: 30% !important;
     width: 25% !important;
+}
+
+.pprojet{
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.thematique{
+    font-weight: bold;
+    font-size: 0.6em;
 }
